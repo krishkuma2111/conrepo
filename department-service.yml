@@ -12,6 +12,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
   config:
+    import: "configserver:http://localhost:8888"
     activate:
       on-profile: dev
 server:
